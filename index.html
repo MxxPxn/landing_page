@@ -1,47 +1,63 @@
+<!-- #region header -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Landing page</title>
 </head>
+<!-- #endregion -->
 
 <body>  
     <header class="header">
-
        <div class="header__top">
-        <a href="#"></a>
-        <img src="img/MyBiKE.png" alt="logo">
+        <a href="#">
+            <img src="img/MyBiKE.png" alt="logo">
+        </a>
+        
+       <div class="header__icons">
+            <a href="" class="icon icon--phone"></a>
+            <a href="" class="icon icon--menu"></a>
+       </div>  
     </div>
 
         <div class="header__bottom">
-            <h1>Take the Streets</h1>
+            <h1 class="header__title">Take the Streets</h1>
         </div>
 
     </header>
 
 
-    <aside></aside>
+    <aside class="menu">
+        <div class="header__top">
+            <a href="#">
+                <img src="img/LogoBurger.png" alt="logo">
+            </a>
+                <a href="icons/Buttons.png" class="icon icon--close"></a>
+        </div>
+    </aside>
 
-    <main>
+    <main class="main">
 
-        <section>
+        <section class="compare">
             <h2>Compare bikes</h2>
         </section>
 
-        <section>
+        <section class="details">
             <h2>The detailes</h2>
         </section>
 
-        <section>
+        <section class="contacts">
             <h2>Contact us</h2>
         </section>
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
     </footer>
 </body>
