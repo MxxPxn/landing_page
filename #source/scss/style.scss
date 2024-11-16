@@ -1,3 +1,72 @@
-
 @import "nulling.scss";
+html{
+    font-family: "Poppins", sans-serif;
+    line-height: 22.4px;
+}
+/* #region head */
+.header {
+    height: 60vh;
+    background-size: cover;
+    background-position: center right ;
+    box-sizing: border-box;
+    background-image: url(/img/Cover_photo.png);
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 20px 24px 20px;
+        align-items: center;
+    }
+    &__icons{
+            display: flex;
+            gap: 24px;
+        }
+    &__bottom {}
+
+    &__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    margin-bottom: 88px;
+
+    }
+
+    
+}
+/* #endhead */
+
+.icon {
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.icon--phone {
+    background-image: url(/icons/Icon-Phone-call.png);
+}
+.icon--menu {
+    background-image: url(/icons/Icon-Burger-menu.png);
+}
+.menu {
+}
+.icon--close {
+
+}
+.main {
+}
+.compare {
+}
+.details {
+}
+.contacts {
+}
+.footer {
+}
+
 
