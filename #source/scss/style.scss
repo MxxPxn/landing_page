@@ -1,4 +1,6 @@
-@import "nulling.scss";
+@import './mixins.scss';
+@import './nulling.scss';
+
 /*#region page*/
 .page{
     font-family: "Poppins", sans-serif;
@@ -20,6 +22,7 @@
         opacity: 1;
         pointer-events: all;
     }
+
 }
 
 
@@ -46,13 +49,12 @@
     }   
 
 &__bottom{
-        padding: 0 20px 40px;
+        padding-bottom: 40px;
+        @include content-padding;
     }
 }
 /*#endregion*/
 /*#region menu*/
-
-
 .menu {
     height: 100vh;
     box-sizing: border-box;
@@ -71,6 +73,7 @@
         
         
     }
+
     &__top{
         margin-bottom: 24px;
     }
@@ -87,12 +90,20 @@
         text-decoration: none;
         
     }
+
+    &__nav{
+        margin-bottom: 40px;
+    }
+
     &__content{
-        padding-inline: 20px;
+        @include content-padding;
     }
 }
+/*#endregion*/
+
 .top-bar{
-    padding: 24px 20px;
+    padding-block: 24px;
+    @include content-padding;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,24 +115,34 @@
     &__logo{
         display: flex;
     }
+
+    @media (min-width: 576px){
+        padding: 36px 72px;
+    }
+
 }
 
 .icon {
     display: block;
     height: 24px;
     width: 24px;
+    
+    @media (min-width: 576px){
+        height: 36px;
+        width: 36px;
+    }
 }
 .icon--phone {
-    background-image: url(/icons/Icon-Phone-call.png);
+    background: url(/icons/Icon-Phone-call.png) no-repeat;
 }
 .icon--menu {
-    background-image: url(/icons/Icon-Burger-menu.png);
+    background: url(/icons/Icon-Burger-menu.png) no-repeat;
 }
 
 .icon--close {
-    background-image: url(/icons/Buttons.png);
+    background: url(/icons/Buttons.png) no-repeat;
 }
-/*#endregion*/
+
 /*#region nav*/
 .nav {
 
@@ -129,11 +150,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
-        
-
     }
-
-    &__item {}
 
     &__link {
         color: inherit;
@@ -141,19 +158,5 @@
         line-height: 22px;
         letter-spacing: 2px;
     }
-    &__menu{
-        margin-bottom: 40px;
-    }
 }
 /*#endregion*/
-
-.main {
-}
-.compare {
-}
-.details {
-}
-.contacts {
-}
-.footer {
-}

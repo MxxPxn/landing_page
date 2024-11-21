@@ -120,7 +120,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 88px;
 }
 .header__bottom {
-  padding: 0 20px 40px;
+  padding-bottom: 40px;
+  padding-inline: 20px;
+}
+@media (min-width: 576px) {
+  .header__bottom {
+    padding-inline: 72px;
+  }
 }
 
 /*#endregion*/
@@ -158,12 +164,22 @@ h1, h2, h3, h4, h5, h6 {
   width: fit-content;
   text-decoration: none;
 }
+.menu__nav {
+  margin-bottom: 40px;
+}
 .menu__content {
   padding-inline: 20px;
 }
+@media (min-width: 576px) {
+  .menu__content {
+    padding-inline: 72px;
+  }
+}
 
+/*#endregion*/
 .top-bar {
-  padding: 24px 20px;
+  padding-block: 24px;
+  padding-inline: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +189,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (min-width: 576px) {
+  .top-bar {
+    padding-inline: 72px;
+  }
 }
 .top-bar__icons {
   display: -webkit-box;
@@ -185,26 +206,36 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
+@media (min-width: 576px) {
+  .top-bar {
+    padding: 36px 72px;
+  }
+}
 
 .icon {
   display: block;
   height: 24px;
   width: 24px;
 }
+@media (min-width: 576px) {
+  .icon {
+    height: 36px;
+    width: 36px;
+  }
+}
 
 .icon--phone {
-  background-image: url(/icons/Icon-Phone-call.png);
+  background: url(/icons/Icon-Phone-call.png) no-repeat;
 }
 
 .icon--menu {
-  background-image: url(/icons/Icon-Burger-menu.png);
+  background: url(/icons/Icon-Burger-menu.png) no-repeat;
 }
 
 .icon--close {
-  background-image: url(/icons/Buttons.png);
+  background: url(/icons/Buttons.png) no-repeat;
 }
 
-/*#endregion*/
 /*#region nav*/
 .nav__list {
   display: -webkit-box;
@@ -221,9 +252,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 2px;
-}
-.nav__menu {
-  margin-bottom: 40px;
 }
 
 /*#endregion*/
