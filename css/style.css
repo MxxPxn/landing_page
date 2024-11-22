@@ -112,12 +112,13 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: space-between;
 }
 .header__title {
+  position: relative;
+  bottom: 88px;
   font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 100%;
   text-align: center;
   color: white;
-  margin-bottom: 88px;
 }
 .header__bottom {
   padding-bottom: 40px;
@@ -126,6 +127,15 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 576px) {
   .header__bottom {
     padding-inline: 72px;
+  }
+}
+@media (min-width: 576px) {
+  .header {
+    height: 50vh;
+  }
+  .header__title {
+    font-weight: 600;
+    font-size: 64px;
   }
 }
 

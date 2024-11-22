@@ -40,18 +40,30 @@
     justify-content: space-between;
 
 &__title {
+    position: relative;
+    bottom: 88px;
     font-size: 36px;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 100%;
     text-align: center;
     color: white;
-    margin-bottom: 88px;
+    
     }   
 
 &__bottom{
         padding-bottom: 40px;
         @include content-padding;
     }
+
+    @media(min-width: 576px){
+        height: 50vh;
+
+       &__title{
+       font-weight: 600;
+       font-size: 64px;
+       }
+    }
+   
 }
 /*#endregion*/
 /*#region menu*/
