@@ -261,18 +261,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon--phone {
-  background: url(/icons/Icon-Phone-call.png) no-repeat;
+  background: url(/icons/Icon-Phone-call.svg) no-repeat;
 }
 
 .icon--menu {
-  background: url(/icons/Icon-Burger-menu.png) no-repeat;
+  background: url(/icons/Icon-Burger-menu.svg) no-repeat;
 }
 .icon--menu:hover {
-  background: url(/icons/Icon-Burger-menu-hover.png) no-repeat;
+  background: url(/icons/Icon-Burger-menu-hover.svg) no-repeat;
 }
 
 .icon--close {
-  background: url(/icons/Buttons.png) no-repeat;
+  background: url(/icons/Icon-Close.svg) no-repeat;
 }
 
 /*#endregion*/
