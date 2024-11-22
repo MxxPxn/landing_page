@@ -16,11 +16,14 @@
         
             opacity: 0;
             pointer-events: none;
+            transition: all 0.8s;
+            transform: translatex(100%);
     }
 
     &__menu:target{
         opacity: 1;
         pointer-events: all;
+        transform: translateX(0);
     }
 
 }
@@ -31,7 +34,7 @@
 .header {
     height: 60vh;
     background-size: cover;
-    background-position: center right ;
+    background-position: center right;
     box-sizing: border-box;
     background-image: url(/img/Cover_photo.png);
     background-repeat: no-repeat;
@@ -56,7 +59,8 @@
     }
 
     @media(min-width: 576px){
-        height: 50vh;
+        height: 55vh;
+        background-position: center;
 
        &__title{
        font-weight: 600;
@@ -113,6 +117,7 @@
 }
 /*#endregion*/
 
+/*#region top-bar*/
 .top-bar{
     padding-block: 24px;
     @include content-padding;
@@ -123,21 +128,26 @@
     &__icons{
             display: flex;
             gap: 24px; 
+
     }
     &__logo{
         display: flex;
-    }
 
-    @media (min-width: 576px){
-        padding: 36px 72px;
-    }
+        @media (min-width: 576px){
+            padding: 36px 72px;
+        }
 
+        @include hover (transform, scale(1.2));
+    }
 }
-
+/*#endregion*/
+/*#region icons*/
 .icon {
     display: block;
     height: 24px;
     width: 24px;
+   
+@include hover (transform, scale(1.2));
     
     @media (min-width: 576px){
         height: 36px;
@@ -149,11 +159,17 @@
 }
 .icon--menu {
     background: url(/icons/Icon-Burger-menu.png) no-repeat;
+
+    &:hover{
+        background: url(/icons/Icon-Burger-menu-hover.png) no-repeat;
+    }
 }
 
 .icon--close {
     background: url(/icons/Buttons.png) no-repeat;
+   
 }
+/*#endregion*/
 
 /*#region nav*/
 .nav {
@@ -165,10 +181,31 @@
     }
 
     &__link {
+        position: relative;
         color: inherit;
         font-size: 22px;
         line-height: 22px;
         letter-spacing: 2px;
+
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            height: 1px;
+            background-color: black;
+            display: block;
+            width: 100%;
+            transition: transform 0.4s;
+            transform: scale(0);
+            transform-origin: left;
+        }
+
+        &:hover::after{
+            transform: scale(1);
+        }
     }
+
+ 
 }
 /*#endregion*/

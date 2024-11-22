@@ -84,10 +84,16 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  -webkit-transform: translatex(100%);
+          transform: translatex(100%);
 }
 .page__menu:target {
   opacity: 1;
   pointer-events: all;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /*#endregion*/
@@ -131,7 +137,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 576px) {
   .header {
-    height: 50vh;
+    height: 55vh;
+    background-position: center;
   }
   .header__title {
     font-weight: 600;
@@ -187,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*#endregion*/
+/*#region top-bar*/
 .top-bar {
   padding-block: 24px;
   padding-inline: 20px;
@@ -215,17 +223,35 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 @media (min-width: 576px) {
-  .top-bar {
+  .top-bar__logo {
     padding: 36px 72px;
   }
 }
+.top-bar__logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 
+/*#endregion*/
+/*#region icons*/
 .icon {
   display: block;
   height: 24px;
   width: 24px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.icon:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (min-width: 576px) {
   .icon {
@@ -241,11 +267,15 @@ h1, h2, h3, h4, h5, h6 {
 .icon--menu {
   background: url(/icons/Icon-Burger-menu.png) no-repeat;
 }
+.icon--menu:hover {
+  background: url(/icons/Icon-Burger-menu-hover.png) no-repeat;
+}
 
 .icon--close {
   background: url(/icons/Buttons.png) no-repeat;
 }
 
+/*#endregion*/
 /*#region nav*/
 .nav__list {
   display: -webkit-box;
@@ -258,10 +288,32 @@ h1, h2, h3, h4, h5, h6 {
   gap: 32px;
 }
 .nav__link {
+  position: relative;
   color: inherit;
   font-size: 22px;
   line-height: 22px;
   letter-spacing: 2px;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 1px;
+  background-color: black;
+  display: block;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.nav__link:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /*#endregion*/
