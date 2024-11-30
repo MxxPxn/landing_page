@@ -1,12 +1,18 @@
 @import './mixins.scss';
 @import './nulling.scss';
-
-/*#region page*/
-.page{
+:root{
+    --font-size-title: 32px;
+    --fon-size-p:23px;
+    --color:#fff;
+}
+body{
     font-family: "Poppins", sans-serif;
     line-height: 22.4px;
     scroll-behavior: smooth;
-
+    box-sizing: border-box;
+}
+/*#region page*/
+.page{
     &__menu{
         
             position: fixed;
@@ -211,11 +217,89 @@
 /*#endregion*/
 
 
-.footer {
-}
-.todo-app {
+/*#region description*/
+/*#endregion*/
 
-		&__form {}
+/*#region compare*/
 
-		&__list {}
+.main {
+    background-color: #1d1d1d;
+
+    &__description{
+
+        h2{
+            padding: 60px 0 32px 20px;
+            font-size: var(--font-size-title);
+            color: var(--color);
+            font-weight: 500;
+        }
+
+        p{
+            padding: 0 20px 0 20px;
+            line-height: 32px;
+            color: var(--color);
+            font-weight: 500;
+            font-size: var(--fon-size-p);
+        }
+    }
+
+    &__compare {
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__compare-title{
+        text-align: center;
+        padding: 92px 20px 48px 20px;
+        font-size: var(--font-size-title);
+        color: var(--color);
+    }
+
+    &__bike1 {
+    }
+
+    &__bike2 {
+    }
+
+    &__bike3 {
+    }
+
+    &__bike--title{
+        padding-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        color: var(--color);
+        padding-bottom: 8px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color);
+        padding: 0 20px 0 20px;
+        
+    }
+    &__bike--price{
+        display: inline-block;
+        color: var(--color);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 34px;
+        padding: 16px 0 40px 20px;
+    }
 }
+.bikes {
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+  
+}
+
+
+/*#endregion*/
+
+

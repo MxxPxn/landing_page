@@ -71,12 +71,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-/*#region page*/
-.page {
+:root {
+  --font-size-title: 32px;
+  --fon-size-p:23px;
+  --color:#fff;
+}
+
+body {
   font-family: "Poppins", sans-serif;
   line-height: 22.4px;
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
+/*#region page*/
 .page__menu {
   position: fixed;
   top: 0;
@@ -314,6 +323,70 @@ h1, h2, h3, h4, h5, h6 {
 .nav__link:hover::after {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+/*#endregion*/
+/*#region description*/
+/*#endregion*/
+/*#region compare*/
+.main {
+  background-color: #1d1d1d;
+}
+.main__description h2 {
+  padding: 60px 0 32px 20px;
+  font-size: var(--font-size-title);
+  color: var(--color);
+  font-weight: 500;
+}
+.main__description p {
+  padding: 0 20px 0 20px;
+  line-height: 32px;
+  color: var(--color);
+  font-weight: 500;
+  font-size: var(--fon-size-p);
+}
+.main__compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main__compare-title {
+  text-align: center;
+  padding: 92px 20px 48px 20px;
+  font-size: var(--font-size-title);
+  color: var(--color);
+}
+.main__bike--title {
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  color: var(--color);
+  padding-bottom: 8px;
+}
+.main p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color);
+  padding: 0 20px 0 20px;
+}
+.main__bike--price {
+  display: inline-block;
+  color: var(--color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  padding: 16px 0 40px 20px;
+}
+
+.bikes img {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /*#endregion*/
