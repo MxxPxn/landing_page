@@ -217,9 +217,6 @@ body{
 /*#endregion*/
 
 
-/*#region description*/
-/*#endregion*/
-
 /*#region compare*/
 
 .main {
@@ -249,7 +246,7 @@ body{
         flex-direction: column;
     }
 
-    &__compare-title{
+    &__title{
         text-align: center;
         padding: 92px 20px 48px 20px;
         font-size: var(--font-size-title);
@@ -273,13 +270,7 @@ body{
         color: var(--color);
         padding-bottom: 8px;
     }
-    p{
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--color);
-        padding: 0 20px 0 20px;
-        
-    }
+   
     &__bike--price{
         display: inline-block;
         color: var(--color);
@@ -288,18 +279,55 @@ body{
         line-height: 34px;
         padding: 16px 0 40px 20px;
     }
+    .subtext{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color);
+        padding: 0 20px 0 20px;
+        
+    }
+
+   
+
 }
+ .details{
+        &__content{}
+
+        &__image{
+            display:flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 0 20px;
+            
+            
+        img{
+            flex-grow: 1;
+            width: 130px;
+            height: auto;
+        }
+           
+
+        }
+
+        &__title {
+            padding: 16px 0 8px 20px;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 34px;
+            color: var(--color);
+        }
+        &__subtext{
+            
+
+        }
+    }
 .bikes {
     img{
         display: block;
         margin: 0 auto;
         width: 90%;
     }
-    
-  
 }
-
-
 /*#endregion*/
 
 
