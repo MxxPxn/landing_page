@@ -263,12 +263,11 @@ body{
     }
 
     &__bike--title{
-        padding-left: 20px;
+        padding: 32px 20px 8px 20px;
         font-size: 24px;
         font-weight: 700;
         line-height: 34px;
         color: var(--color);
-        padding-bottom: 8px;
     }
    
     &__bike--price{
@@ -291,7 +290,10 @@ body{
 
 }
  .details{
-        &__content{}
+        &__content{
+            margin-bottom: 40px;
+            
+        }
 
         &__image{
             display:flex;
@@ -311,6 +313,7 @@ body{
 
         &__title {
             padding: 16px 0 8px 20px;
+            width: fit-content;
             font-size: 24px;
             font-weight: 700;
             line-height: 34px;
@@ -329,5 +332,4 @@ body{
     }
 }
 /*#endregion*/
-
 

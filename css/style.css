@@ -359,12 +359,11 @@ body {
   color: var(--color);
 }
 .main__bike--title {
-  padding-left: 20px;
+  padding: 32px 20px 8px 20px;
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
   color: var(--color);
-  padding-bottom: 8px;
 }
 .main__bike--price {
   display: inline-block;
@@ -381,6 +380,9 @@ body {
   padding: 0 20px 0 20px;
 }
 
+.details__content {
+  margin-bottom: 40px;
+}
 .details__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,6 +402,9 @@ body {
 }
 .details__title {
   padding: 16px 0 8px 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
