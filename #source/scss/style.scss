@@ -286,13 +286,15 @@ body{
         
     }
 
-   
+
 
 }
- .details{
+/*#endregion*/
+/*#region details*/
+
+.details{
         &__content{
-            margin-bottom: 40px;
-            
+            margin-bottom: 40px; 
         }
 
         &__image{
@@ -323,6 +325,19 @@ body{
             
 
         }
+     
+
+    }
+    .btn{
+        display: block;
+        width: 278px;
+        height: 56px;
+        border-radius: 40px;
+        padding: 0 48px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
     }
 .bikes {
     img{
@@ -332,4 +347,51 @@ body{
     }
 }
 /*#endregion*/
+
+.contacts {
+ 
+
+    &__body {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+
+    }
+
+    &__form-name {
+
+    }
+
+    &__form-email {}
+
+    &__form-message{
+        width: 277px;
+        height: 148px;
+        border-radius: 16px;
+        margin-bottom: 32px;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+.input{
+    width: 277px;
+    height: 48px;
+    border-radius: 40px;
+    margin-bottom: 16px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
 
