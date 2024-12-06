@@ -431,6 +431,19 @@ body {
 }
 
 /*#endregion*/
+.input {
+  width: 277px;
+  height: 48px;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: #1d1d1d;
+}
+
 .contacts__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,12 +472,20 @@ body {
   padding: 15px;
   font-size: 16px;
 }
-
-.input {
-  width: 277px;
-  height: 48px;
-  border-radius: 40px;
-  margin-bottom: 16px;
-  padding: 15px;
+.contacts__container {
+  color: var(--color);
+  padding-top: 48px;
+  margin-bottom: 120px;
+  padding-left: 20px;
+}
+.contacts__title {
+  margin-bottom: 8px;
+}
+.contacts__info {
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.contacts__image {
+  width: 100%;
 }
